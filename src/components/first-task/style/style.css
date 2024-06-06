@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.container2 {
+    background-color: yellow;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+ p {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+.bottons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 20px 2px rgb(206, 206, 206);
+}
+ button {
+    padding: 12px 30px;
+    margin: 8px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+   
+}
+ button:hover {
+    letter-spacing: 1px;
+    transition: .8s;
+    cursor: pointer;
+}
+@media (max-width:576px) {
+    .popup {
+        width: 80%;
+    }
+    .container button {
+        padding: 8px 22px;
+        font-size: 18px;
+    } 
+}
